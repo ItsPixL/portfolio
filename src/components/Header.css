@@ -1,0 +1,33 @@
+nav {
+  position: fixed;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+
+  border: 1px solid white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--clr-grey);
+  border-radius: 30px;
+}
+
+.nav-ul_li {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 0.3rem 0.5rem;
+}

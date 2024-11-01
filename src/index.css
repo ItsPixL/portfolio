@@ -4,10 +4,18 @@
   --clr-white: #ffffff;
   --clr-green: #00ff44;
   --clr-blue: #0048ff;
+
+  --clr-grey: #181818;
+
   --fnt-head: "Poiret One", sans-serif;
   --fnt-main: "Didact Gothic", sans-serif;
 
   color: var(--clr-white);
   background-color: var(--clr-black);
   font-family: var(--fnt-main);
+}
+
+#root {
+  width: 80vw;
+  margin: 0 auto;
 }
