@@ -1,0 +1,13 @@
+:root {
+  /* Variables */
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-green: #00ff44;
+  --clr-blue: #0048ff;
+  --fnt-head: "Poiret One", sans-serif;
+  --fnt-main: "Didact Gothic", sans-serif;
+
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  font-family: var(--fnt-main);
+}
