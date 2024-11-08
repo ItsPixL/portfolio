@@ -6,7 +6,7 @@ nav {
   align-items: center;
   padding: 0.5rem 1.5rem;
 
-  border: 1px solid white;
+  /* border: 1px solid var(--clr-white); */
 }
 
 .logo {
@@ -18,6 +18,8 @@ nav {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding: 0 0 0 5px;
+  gap: 10px;
 
   align-items: center;
   text-align: center;
@@ -27,7 +29,27 @@ nav {
 }
 
 .nav-ul_li {
-  border: 1px solid white;
+  border: 1px solid var(--clr-white);
   border-radius: 30px;
   padding: 0.3rem 0.5rem;
+}
+
+.nav-ul_switch {
+  /* border: 1px solid var(--clr-white); */
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.nav-ul_switch_icon {
+  font-size: 1.2rem;
+}
+
+.nav-ul_switch_icon,
+.nav-ul_li {
+  cursor: pointer;
+  caret-color: transparent;
+  user-select: none;
 }
