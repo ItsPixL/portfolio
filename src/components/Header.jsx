@@ -45,10 +45,34 @@ function Header({ isDarkMode, toggleDarkMode }) {
         <li className="nav-ul_switch" onClick={toggleDarkMode}>
           {darkLightIcon}
         </li>
-        <li className="nav-ul_li">Home</li>
-        <li className="nav-ul_li">About</li>
-        <li className="nav-ul_li">Projects</li>
-        <li className="nav-ul_li">Contact</li>
+        <motion.li
+          className="nav-ul_li"
+          whileHover={{ opacity: 0.6 }}
+          transition={{ duration: 0.1 }}
+        >
+          Home
+        </motion.li>
+        <motion.li
+          className="nav-ul_li"
+          whileHover={{ opacity: 0.6 }}
+          transition={{ duration: 0.1 }}
+        >
+          About
+        </motion.li>
+        <motion.li
+          className="nav-ul_li"
+          whileHover={{ opacity: 0.6 }}
+          transition={{ duration: 0.1 }}
+        >
+          Projects
+        </motion.li>
+        <motion.li
+          className="nav-ul_li"
+          whileHover={{ opacity: 0.6 }}
+          transition={{ duration: 0.1 }}
+        >
+          Contact
+        </motion.li>
       </ul>
     </nav>
   );

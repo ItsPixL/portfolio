@@ -3,11 +3,18 @@ import "./App.css";
 import Header from "./components/Header.jsx";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = React.useState(true);
+  const [isDarkMode, setIsDarkMode] = React.useState(() => {
+    const storedDarkMode = localStorage.getItem("darkMode");
+    return storedDarkMode === "true";
+  });
 
   const toggleDarkMode = () => {
     setIsDarkMode((prev) => !prev);
   };
+
+  React.useEffect(() => {
+    localStorage.setItem("darkMode", isDarkMode);
+  }, [isDarkMode]);
 
   React.useEffect(() => {
     const root = document.documentElement;

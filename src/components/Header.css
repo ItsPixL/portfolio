@@ -41,6 +41,12 @@ nav {
   display: flex;
   gap: 5px;
   justify-content: center;
+  transition: opacity 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.nav-ul_switch:hover {
+  opacity: 0.7;
+  box-shadow: inset 0px 0px 0px 1px var(--clr-white);
 }
 
 .nav-ul_switch_icon {
