@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
+
 import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = React.useState(() => {
@@ -32,6 +34,7 @@ function App() {
   return (
     <>
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Hero isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     </>
   );
 }
