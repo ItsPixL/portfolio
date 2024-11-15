@@ -13,7 +13,7 @@ function Hero() {
         </p>
       </div>
       <div className="heroImg">
-        <img></img>
+        <img src="../assets/hero_img.png" alt="Neer's memoji."></img>
         <div className="glow"></div>
       </div>
     </main>
